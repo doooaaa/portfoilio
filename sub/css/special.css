@@ -1,0 +1,68 @@
+/*쇼박스특집*/
+@charset "utf-8";
+
+section.special {
+	width: 100%;
+	background-color: #000;
+}
+
+.special .special-con {
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.special .con1 {
+	background: url(../imges/special/special_skg.jpg) no-repeat center/cover;
+}
+
+.special .con2 {
+	background: url(../imges/special/special_kys.jpg) no-repeat center/cover;
+	margin-top: 200px;
+}
+
+.special-con a {
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	background-color:
+		rgba(0, 0, 0, 0.6);
+	text-align: center;
+	transition: all 1s;
+}
+
+.special .con1 a {
+	left: -100%;
+}
+
+.special .con2 a {
+	right: -100%;
+}
+
+.con1:hover a {
+	left: 0
+}
+
+.con2:hover a {
+	right: 0
+}
+
+.special-con span {
+	font-size: 24px;
+    font-size: 1.5rem;
+	letter-spacing: -1px;
+	color: #fff;
+	display: inline-block;
+	line-height: 200px;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.special-con:hover span {
+	opacity: 1;
+}

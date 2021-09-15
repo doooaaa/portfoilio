@@ -1,0 +1,149 @@
+/*상영예정작*/
+@charset "utf-8";
+
+section.coming {
+	width: 100%;
+}
+
+.coming .coming-wrap {
+	width: 100%;
+	margin: 200px 0 300px;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: center;
+}
+
+.coming-wrap > div {
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+	overflow: hidden;
+	transition: all 0.6s;
+}
+
+.coming-wrap div ~ div {
+	margin-left: 30px;
+}
+
+.coming-wrap div:hover {
+	transform: translateY(-50%);
+}
+
+.coming-wrap .con1 {
+	background: url(../imges/coming/emergency_poster_m.jpg) no-repeat center/cover;
+}
+
+.coming-wrap .con1:hover {
+	background: url(../imges/coming/emergency_poster.jpg) no-repeat center/cover;
+}
+
+.coming-wrap .con2 {
+	background: url(../imges/coming/yaksha_poster_m.jpg) no-repeat no-repeat center/cover;
+}
+
+.coming-wrap .con2:hover {
+	background: url(../imges/coming/yaksha_poster.jpg) no-repeat no-repeat center/cover;
+}
+
+.coming-wrap .con3 {
+	background: url(../imges/coming/wiredM_poster_m.jpg) no-repeat no-repeat center/cover;
+}
+
+.coming-wrap .con3:hover {
+	background: url(../imges/coming/wiredM_poster.jpg) no-repeat no-repeat center/cover;
+}
+
+.coming-wrap a {
+	width: 100%;
+	height: 100%;
+}
+
+.coming-wrap span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 500px;
+	font-size: 28px;
+	font-size: 1.75rem;
+	font-weight: 400;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: all 0.8s;
+}
+
+.coming-wrap div:hover span {
+	transform: scaleY(0);
+}
+
+
+/*모달 가상선택자*/
+
+
+#black {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+#main {
+	width: 800px;
+	height: 560px;
+	position: fixed;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	border-radius: 20px;
+	border: 1px solid #d25400;
+	overflow: hidden;
+}
+
+#main .modal-img {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#main .modal-img img {
+	display: block;
+	width: 100%;
+}
+
+#main .modal-txt {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-sizing: border-box;
+	padding: 50px;
+	color: #fff;
+}
+
+#main .modal-txt h4 {
+	line-height: 60px;
+	text-align: center;
+	font-size: 26px;
+	font-size: 1.625rem;
+	padding-bottom: 30px;
+	margin: 0 0 30px;
+	border-bottom: 1px solid #fff;
+}
+
+#main .modal-txt p {
+	line-height: 30px;
+	margin-bottom: 40px;
+	word-break: keep-all;
+	text-align: center;
+}
+
+#main .modal-txt p:last-child {
+	color: #d25400;
+	text-align: left;
+	word-break: keep-all;
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+section.history {
+    width: 100%;
+}
+
+.history .his-wrap {
+    margin-top: 120px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 120px auto;
+}
+
+.history .his-wrap ul.his-list {
+    width: 100%;
+}
+
+.his-list li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.his-list li ~ li {
+    margin-top: 100px;
+}
+
+.his-list li .his-title {
+    width: 30%;
+}
+
+.his-list li .his-title h4 {
+    width: 180px;
+    font-size: 38px;
+    font-size: 2.375rem;
+    box-sizing: border-box;
+    color: #d25400;
+    position: relative;
+}
+
+.his-list li .his-title h4:after {
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 1px;
+    background-color: #d25400;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+.his-list li .his-des {
+    width: 70%;
+    padding-top: 80px;
+        display: none;
+}
+.his-list li:first-child .his-des{
+    display: block;
+}
+.his-list li .des {
+    width: 100%;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.his-list li span {
+    margin-right: 50px;
+    color: #d25400;
+}

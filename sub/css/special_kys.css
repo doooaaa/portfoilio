@@ -1,0 +1,276 @@
+/*쇼박스특집:김윤석*/
+@charset "utf-8";
+
+section.sp-kys {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sp-kys > h3 {
+    text-align: center;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 80px;
+    margin: 100px auto 0px;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    cursor: pointer;
+}
+
+.sp-kys > h3:hover {
+    background-color: rgba(255, 053, 0, 0.3);
+}
+
+.sp-kys > h3:hover span {
+    color: #13b5b1;
+}
+
+.sp-kys .main {
+    width: 100%;
+    border-bottom: 1px solid #111;
+}
+
+.main .imgbox {
+    width: 100%;
+    height: 700px;
+    background: url(../imges/special/special_kys.jpg) no-repeat top/cover;
+    background-attachment: fixed;
+}
+
+.main p {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto 30px;
+    color: #333;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+.sp-kys .kys-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.kys-wrap .con-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 200px auto 100px;
+    position: relative;
+}
+
+.con-list:before {
+    content: "";
+    display: block;
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+    background-color: rgb(255, 153, 0, 0.3);
+    position: absolute;
+    top: -100px;
+    left: -300px;
+}
+
+.con-list:nth-child(2):before {
+    left: 600px;
+}
+
+.con-list .con-wrap {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.con-wrap > div {
+    width: 50%;
+    height: 700px;
+    float: left;
+
+}
+
+.con-img {
+    width: 50%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+
+}
+.con-img:first-child img {
+    height: 100%;
+}
+
+.con-txt {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.con-txt p {
+    box-sizing: border-box;
+    padding: 30px;
+    line-height: 30px;
+    word-break: keep-all;
+}
+
+.con-txt span {
+    display: block;
+    font-weight: 400;
+    color: #d25400;
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.con-txt p a {
+    width: 440px;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    color: #333;
+    position: absolute;
+    bottom: 30px;
+    transition: all 0.6s;
+}
+
+.con-txt p a:hover {
+    background-color: #333;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*링크버튼*/
+.link {
+    width: 100%;
+    margin: 50px 0 150px;
+}
+
+.link p {
+    width: 100%;
+    float: left;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-decoration: overline;
+}
+
+.link a {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 30px;
+    float: left;
+    transition: all .6s ease-out;
+}
+
+.link .ckj-wrap,
+.link-wrap {
+    float: right;
+}
+
+.link .ckj-wrap p {
+    text-align: right;
+}
+
+.link .ckj-wrap a {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.link a span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+/*넷플릭스 버튼*/
+.link .netflix-btn {
+    background: url(../imges/special/netflix.jpg) no-repeat center/cover;
+    box-sizing: border-box;
+}
+
+.netflix-btn:hover {
+    background: #fff;
+    border: 3px solid #E50914;
+}
+
+.netflix-btn span {
+    color: transparent;
+}
+
+.netflix-btn:hover span {
+    color: #E50914;
+}
+
+/*왓챠버튼*/
+.watcha-btn {
+    background: url(../imges/special/watcha.jpg) no-repeat center/cover;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.watcha-btn:hover {
+    background: #fff;
+    border: 3px solid #ff0558;
+}
+
+.watcha-btn span {
+    color: transparent;
+}
+
+.watcha-btn:hover span {
+    color: #ff0558;
+}
+
+/*카카오페이지 버튼*/
+.kakao-btn {
+    background: url(../imges/special/kakaopage.jpg) no-repeat center/cover;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.kakao-btn:hover {
+    background: #fff;
+    border: 3px solid #ffd200;
+}
+
+.kakao-btn span {
+    color: transparent;
+}
+
+.kakao-btn:hover span {
+    color: #ffd200;
+}
+
+/*티빙 버튼*/
+.link .tving-btn {
+    background: url(../imges/special/tving.jpg) no-repeat center/cover;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.tving-btn:hover {
+    background: #fff;
+    border: 3px solid red;
+}
+
+.tving-btn span {
+    color: transparent;
+}
+
+.tving-btn:hover span {
+    color: red;
+}

@@ -1,0 +1,89 @@
+/*웰컴투동막골 상세페이지*/
+@charset "utf-8";
+
+
+/*포스터와 간략인포*/
+
+section.poster {
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    padding-top: 120px;
+}
+
+section.poster .poster-wrap {
+    width: 100%;
+    height: 100%;
+    background: url(../imges/welcomeToDongmakgol/wctdmg_bg.jpg) no-repeat top/cover;
+    background-attachment: fixed;
+}
+
+.poster-wrap .poster-box {
+    width: 60%;
+    min-width: 600px;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 65%;
+}
+
+.poster-box > div {
+    width: 50%;
+    max-width: 500px;
+    height: 640px;
+    float: left;
+}
+
+.poster-box .box-img {
+    background: url(../imges/welcomeToDongmakgol/wctdmg_centerPoster.jpg) no-repeat center/cover;
+}
+
+.poster-box .box-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+.box-info h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+.box-info h4 span {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.box-info table {
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 20px;
+    margin: 100px 0;
+}
+
+.box-info table tr {
+    line-height: 2.4;
+}
+
+.box-info table tr td {
+    width: 30%;
+    text-indent: 30px;
+    font-weight: normal;
+}
+
+.box-info table tr td:last-child {
+    width: 70%;
+}
+
+/*스틸컷*/
+section.still {
+    margin-top: 150px;
+}

@@ -1,0 +1,567 @@
+@charset "utf-8";
+
+/*공통css*/
+
+.page-name {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 150px;
+    text-align: center;
+    margin-top: 120px;
+    color: #d25400;
+}
+
+.blind {
+    display: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/*현재상영작 선택*******************/
+main {
+    width: 100%;
+    height: 500px;
+}
+
+main .main-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-wrap ul.flim-list {
+    width: 100%;
+}
+
+.flim-list li {
+    width: 30%;
+    height: 270px;
+    text-align: center;
+}
+
+.flim-list li ~ li {
+    margin-left: 5%;
+}
+
+.flim-list li a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+}
+
+.flim-box1 a {
+    background: url(../imges/goldenHoliday/mini_po_01.png) no-repeat top/cover;
+}
+
+.flim-box2 a {
+    background: url(../imges/goldenHoliday/mini_po_02.png) no-repeat top/cover;
+}
+
+.flim-box3 a {
+    background: url(../imges/goldenHoliday/mini_po_03.png) no-repeat top/cover;
+}
+
+.flim-list li a p {
+    color: #ccc;
+    width: 100%;
+    text-shadow: 0 0 9px #000;
+    font-size: 2rem;
+    position: absolute;
+    top: 38%;
+}
+
+.flim-list li a p span {
+    margin-top: 11px;
+    color: lightblue;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.flim-list li.on a {
+    background-position: 0 100%;
+}
+
+.flim-list li a:hover {
+    background-position: 0 100%;
+    transition: all .5s ease-in-out;
+}
+
+.flim-list li.on a p {
+    color: #fff;
+}
+
+.flim-list li a:hover p {
+    color: #fff;
+}
+
+.flim-list li a span:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: lightblue;
+    position: relative;
+    top: -5px;
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+}
+
+.flim-list li a:hover span:before {
+    transform: scale(1);
+}
+
+.flim-list li.on a span:before {
+    transform: scale(1);
+}
+
+/***************************************/
+
+
+
+/*영화상세페이지*/
+
+/*링크*/
+section.link {
+    width: 100%;
+    height: 100px;
+    margin-top: 500px;
+}
+
+.link ul {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.link ul li {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .6s ease-out;
+}
+
+.link ul li ~ li {
+    margin-left: 8%;
+}
+
+.link ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 18px;
+    font-size: 1.125rem;
+    transition: all .6s ease-out;
+}
+
+
+/*넷플릭스 버튼*/
+.netflix-btn {
+    background: url(../imges/netflix.jpg) no-repeat center/cover;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.netflix-btn:hover {
+    background: #fff;
+    border: 3px solid #E50914;
+}
+
+.netflix-btn a {
+    color: transparent;
+}
+
+.netflix-btn:hover a {
+    color: #E50914;
+}
+
+/*왓챠버튼*/
+.watcha-btn {
+    background: url(../imges/watcha.jpg) no-repeat center/cover;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.watcha-btn:hover {
+    background: #fff;
+    border: 3px solid #ff0558;
+}
+
+.watcha-btn a {
+    color: transparent;
+}
+
+.watcha-btn:hover a {
+    color: #ff0558;
+}
+
+/*카카오페이지 버튼*/
+.kakao-btn {
+    background: url(../imges/kakaopage.jpg) no-repeat center/cover;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.kakao-btn:hover {
+    background: #fff;
+    border: 3px solid #ffd200;
+}
+
+.kakao-btn a {
+    color: transparent;
+}
+
+.kakao-btn:hover a {
+    color: #ffd200;
+}
+
+/*티빙 버튼*/
+.tving-btn {
+    background: url(../imges/tving.jpg) no-repeat center/cover;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.tving-btn:hover {
+    background: #fff;
+    border: 3px solid red;
+}
+
+.tving-btn a {
+    color: transparent;
+}
+
+.tving-btn:hover a {
+    color: red;
+}
+
+/*시놉시스*/
+section.synopsis {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 120px;
+    border-bottom: 1px solid #888;
+}
+
+.synopsis .snop-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-name {
+    color: #13b5b1;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 3;
+
+}
+
+.snop-wrap p {
+    font-weight: 300;
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #555;
+    word-break: keep-all;
+    line-height: 1.5;
+}
+
+.snop-wrap p b {
+    color: #333;
+    line-height: 3;
+}
+
+/*출연진*/
+
+section.people {
+    margin-top: 80px;
+}
+
+.people .people-wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.people-wrap ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-wrap ul li {
+    width: 130px;
+    text-align: center;
+}
+
+.people-wrap ul li a {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.people-wrap ul li a img {
+    width: 100%;
+    opacity: 0.8;
+    transition: all 0.4s ease-in-out;
+}
+
+.people-wrap ul li a:hover img {
+    width: 100%;
+    opacity: 1;
+}
+
+.people-wrap ul li span {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+/*유투브*/
+
+section.ytb {
+    width: 100%;
+    margin-top: 140px;
+    height: 580px;
+    background: url(../imges/ytb_bg.png) no-repeat top/cover;
+    text-align: center;
+}
+
+.ytb .ytb-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ytb .ytb-wrap ul.ytb-list {
+    width: 100%;
+    padding: 140px 10% 0;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.ytb-list li {
+    width: 30%;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+}
+
+.ytb-list li ~ li {
+    margin-left: 5%
+}
+
+.ytb-list li a {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.ytb-list li a iframe {
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0.4;
+    background-color: #000;
+}
+
+.ytb-list li.on {
+    transform: translateY(-50%);
+}
+
+.ytb-list li:hover {
+    transform: translateY(-50%);
+}
+
+.ytb-list li.on a iframe {
+    opacity: 1;
+}
+
+.ytb-list li:hover iframe {
+    opacity: 1;
+}
+
+.ytb-wrap div.ytb-view {
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+
+.ytb-view iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+/*스틸컷*/
+
+section.still {
+    width: 100%;
+    margin: 300px 0;
+}
+
+.still .still-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.still .still-list {
+    width: 100%;
+}
+
+.still .still-list > ul {
+    width: 100%;
+}
+
+.still-list > ul > li {
+    width: 30%;
+    float: left;
+}
+
+.still-list > ul > li ~ li {
+    margin-left: 5%;
+}
+
+.still-list > ul > li > ul {
+    width: 100%;
+}
+
+.stillLine li {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    display: none;
+}
+
+.stillImg img {
+    transition: all 0.6s ease-in-out;
+    border-radius: 20px;
+}
+
+.stillImg:hover img {
+    transform: scale(1.2);
+    border-radius: 20px;
+}
+
+.still-list .stillImg > a {
+    width: 100%;
+}
+
+.still-list img {
+    width: 100%;
+
+}
+
+.still-wrap a.more {
+    width: 30%;
+    border: 1px solid #555;
+    color: #555;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin: 50px auto 100px;
+    border-radius: 15px;
+}
+
+.still-wrap a.more:hover {
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    transition: all .6s ease-in-out;
+}
+
+/*가상선택자*/
+
+
+#white {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#main img {
+    display: block;
+    width: 100%;
+}
+
+#white a {
+    display: inline-block;
+    width: 66px;
+    margin-top: -33px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+#white .modal-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+#white .modal-right {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+#white a:hover {
+    opacity: 1;
+}
+
+#white a img {
+    display: block;
+    width: 80%;
+}
+
+#white .modal-close {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 100px;
+    font-weight: 400;
+    line-height: 50px;
+    border: 2px solid #ff9900;
+    border-radius: 100px;
+    color: #ff9900;
+    position: absolute;
+    top: 180px;
+    right: 20px;
+}
+
+#white .modal-close:hover {
+    font-weight: 500;
+    color: #fff;
+    background-color: #ff9900;
+}

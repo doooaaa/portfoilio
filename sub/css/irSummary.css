@@ -1,0 +1,73 @@
+/*재무공지*/
+@charset "utf-8";
+
+.ir-summary {
+	width: 100%;
+}
+
+.ir-summary-wrap {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.ir-summary-wrap ul {
+	width: 100%;
+}
+
+.ir-summary-wrap ul li {
+	width: 100%;
+	text-align: center;
+	margin: 40px auto;
+}
+
+.ir-summary-wrap ul li.on a {
+	font-weight: 600;
+	border: 2px solid #ff9900;
+	background-color: #ff9900;
+	color: #fff;
+}
+
+.ir-summary-wrap ul li:hover a {
+	font-weight: 600;
+	border: 2px solid #ff9900;
+	background-color: #ff9900;
+	color: #fff;
+	transition: all 0.6s;
+}
+
+.ir-section table {
+	width: 96%;
+	border-collapse: collapse;
+	margin: 40px auto 0;
+	display: none;
+}
+
+.ir-section table tr ~ tr td,
+.ir-section table tr ~ tr th {
+	border-top: 1px solid #999;
+}
+
+.ir-section table tr {
+	line-height: 45px;
+}
+
+.ir-section table tr:first-child {
+	color: #13b5b1;
+	font-weight: 500;
+}
+
+.ir-section table tr th {
+	text-align: left;
+	text-indent: 10px;
+}
+
+
+.ir-summary-wrap p {
+	line-height: 50px;
+	color: #999;
+	margin: 30px 0 100px;
+	text-align: right;
+	font-size: 14px;
+	font-size: 0.875rem;
+}

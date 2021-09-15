@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*하단*/
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #000;
+	color: #666;
+}
+
+footer .footer-wrap {
+	width: 100%;
+	max-width: 1280px; 
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 60px;
+	box-sizing: border-box;
+}
+
+.footer-wrap .footer-inner {
+	width: 60%;
+	float: left;
+	font-size: 0.8rem;
+}
+
+.footer-inner .ft-info {
+	line-height: 22px;
+}
+
+.footer-inner address.ft-info {
+	font-style: normal;
+}
+
+.footer-inner p.ft-info {
+	margin-top: 30px;
+}
+
+.footer-wrap a {
+	width: 40%;
+	float: left;
+	color: #ccc;
+	text-align: right;
+	font-size: 0.8rem;
+}
+
+.footer-wrap a:hover {
+	text-decoration: underline;
+}

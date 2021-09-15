@@ -1,0 +1,191 @@
+/*현재상영작*/
+
+@charset "utf-8";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+section,
+article {
+    display: block;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+article.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page .page-wrap {
+    width: 1152px;
+    height: 547.2px;
+    margin: auto 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+
+}
+
+.page .page-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.box-txt {
+    width: 200px;
+    height: 678.3px;
+    position: absolute;
+    left: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    padding: 50px 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all .4s;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.box-txt .page-title {
+    display: block;
+    color: #333;
+    text-align: center;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.box-txt p {
+    height: 50%;
+    text-align: right;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+    color: #d25400;
+    opacity: 0.5;
+}
+
+.box-txt a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 678.3px;
+    left: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scaleY(0);
+    transition: all 2s;
+}
+
+.box-txt:hover {
+    background: url(../imges/now/kjss_centerPoster.jpg) no-repeat center/cover;
+    width: 500px;
+
+}
+
+.box-txt:hover .page-title {
+    display: none;
+}
+
+.box-txt:hover p {
+    display: none;
+}
+
+.box-txt:hover a {
+    transform: scaleY(1);
+}
+
+/*블릿*/
+.b-menu {
+    width: 200px;
+    position: fixed;
+    right: -50px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.b-menu ol {
+    width: 100%;
+}
+
+.b-menu ol li {
+    width: 100%;
+    margin: 50px;
+    background-color: rgba(150, 150, 150, 0.3);
+    padding: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: all .6s;
+}
+
+.b-menu ol li:hover {
+    background-color: #d25400;
+    transform: translateX(-50px);
+}
+
+.b-menu ol li.on {
+    background-color: #d25400;
+    transform: translateX(-50px);
+}
+
+.b-menu ol li a {
+    width: 100%;
+    height: 100%;
+    color: #999;
+}
+
+.b-menu ol li:hover a {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 6px maroon;
+}
+
+.b-menu ol li.on a {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 6px maroon;
+}
+
+/*모달 가상선택자*/
+
+
+#black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#Main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}

@@ -1,0 +1,159 @@
+/*공시정보*/
+@charset "utf-8";
+
+
+.ir-info {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ir-info .ir-info-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.ir-info-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 3px solid #d25400;
+}
+
+.ir-info-wrap table th {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.ir-info-wrap table td {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.ir-info-wrap table tr:first-child td {
+    border-top: 1px solid #ccc;
+}
+
+
+.ir-info-wrap table tr:first-child th {
+    border-top: 1px solid #ccc;
+}
+
+.ir-info-wrap table td:first-child {
+    width: 80px;
+}
+
+.ir-info-wrap table th a {
+    color: #333;
+}
+.ir-info-wrap table td:last-child {
+    color: #555;
+}
+
+.pager-wrap {
+    width: 100%;
+    height: 20px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pager-wrap ol.ir-info-pager {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pager-wrap ol.ir-info-pager li {
+    width: 40px;
+    height: 100%;
+}
+
+.ir-info-pager li a {
+    width: 100%;
+    height: 100%;
+    color: #999;
+}
+
+.ir-info-pager li:hover a {
+    color: #333;
+}
+
+.ir-info-pager li.on a {
+    color: #333;
+}
+
+.ir-info-wrap .btn {
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid #333;
+    color: #333;
+}
+
+.ir-info-wrap .btn:hover {
+    background-color: #333;
+    color: #fff;
+    transition: all 0.6s;
+}
+
+/*모달*/
+#ir-info-modal {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 223;
+    overflow: auto;
+    padding-bottom: 100px;
+
+}
+
+#ir-info-modal .ir-info-modal-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 30px;
+    word-break: keep-all;
+}
+
+#ir-info-modal .date {
+    text-align: right;
+}
+
+#ir-info-modal .ir-info-modal-wrap > ol {
+    width: 100%;
+    height: auto;
+}
+
+#ir-info-modal .ir-info-modal-wrap > ol > li {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+#ir-info-modal .subtitle{
+    font-size: 18px;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-top: 100px;
+}
+
+
+
+#ir-info-modal .ir-info-modal-btn {
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    display: none;
+}
+
+#ir-info-modal .ir-info-modal-btn:hover {
+    font-weight: 500;
+    color: #fff;
+    background-color: #ff9900;
+}

@@ -1,0 +1,142 @@
+/*쇼박스랭킹 상세페이지*/
+
+@charset utf-8;
+
+section.lank {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+
+.lank h2 {
+    text-align: center;
+    height: 60px;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.lank h2 span {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 100px;
+    font-weight: 400;
+    margin: 0 70px;
+    line-height: 60px;
+    cursor: pointer;
+    border: 2px solid #ff9900;
+    border-radius: 100px;
+    color: #ff9900;
+}
+
+
+.lank h2 span.on {
+    color: #fff;
+    background-color: #ff9900;
+    font-weight: 800;
+}
+
+.lank h2 span:hover {
+    color: #fff;
+    background-color: #ff9900;
+    font-weight: 800;
+    transition: all .9s ease-out;
+}
+
+.lank ul.total-box {
+    width: 100%;
+    margin: 60px 0;
+}
+
+ul.total-box li {
+    position: relative;
+    width: 18%;
+    margin-bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+ul.total-box li ~ li {
+    margin-left: 2.5%;
+}
+
+ul.total-box li:nth-child(6) {
+    margin-left: 0;
+}
+
+ul.total-box li:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    transform: scale(0);
+    transition:  all .6s ease-in-out;
+}
+
+ul.total-box li:hover:after {
+    transform: scale(1);
+}
+
+ul.total-box li a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+ul.total-box li a:hover img {
+    transform: scale(1.2);
+}
+
+
+ul.total-box li a img {
+    display: block;
+    width: 100%;
+    transition: all .6s ease-in-out;
+}
+
+ul.total-box li a span {
+    position: absolute;
+    top: -8%;
+    left: -8%;
+    font-style: italic;
+    font-size: 112px;
+    font-size: 7rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.total-box li h4 {
+    width: 100%;
+    height: 100%;
+    line-height: 2;
+    margin-top: 10px;
+    color: #333;
+    margin-bottom: 1px;
+}
+
+ul.total-box li > span {
+    display: block;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding-top: 5px;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+ul.total-box li > span:last-child {
+    color: #777;
+}

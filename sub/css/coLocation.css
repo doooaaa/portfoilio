@@ -1,0 +1,138 @@
+/*회사위치*/
+@charset "utf-8";
+
+
+section.co-location {
+    margin: 80px 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.co-location .location-wrap {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.co-location .location-wrap .location-inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.location-inner .location-iframe {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #ff9900;
+    float: left;
+}
+
+.location-iframe iframe {
+    width: 100%;
+    display: block;
+}
+
+.location-inner .location-address {
+    width: 100%;
+    line-height: 26px;
+    word-break: keep-all;
+    float: right;
+    margin-top: 20px;
+
+}
+
+.location-address p {
+    width: 48%;
+    height: 250px;
+    float: left;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-right: 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ff9900;
+}
+
+.location-address .address {
+    background: url(../imges/comm/slate_o.png) no-repeat 90%/50%;
+}
+
+.location-address .floor {
+    background: url(../imges/comm/showbox_logo.png) no-repeat 95% 12%/16%;
+    margin-left: 4%;
+}
+
+.location-address span {
+    color: #ff9900;
+}
+
+.location-inner .location-trans {
+    width: 100%;
+
+}
+
+.location-trans > div {
+    float: left;
+    width: 48%;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 20px;
+
+    margin: 40px 0;
+}
+
+.location-trans .bus {
+    margin-left: 4%;
+}
+
+.location-trans a {
+    text-align: center;
+    overflow: hidden;
+}
+
+.location-trans img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.location-trans img:hover {
+    transform: translateX(-20px);
+}
+
+.location-trans p {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+    font-weight: 500;
+    color: #fff;
+    display: none;
+}
+
+.subway .bdline {
+    color: gold;
+}
+
+.subway .line3 {
+    color: orangered;
+}
+
+.subway .line7 {
+    color: darkolivegreen;
+}
+
+.bus .busG {
+    color: green;
+}
+
+.bus .busB {
+    color: blue;
+}

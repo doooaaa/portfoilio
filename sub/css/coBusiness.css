@@ -1,0 +1,90 @@
+/*사업소개*/
+
+@charset "utf-8";
+
+section.business {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.business .bsn-wrap {
+    margin-top: 120px;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.business .bsn-wrap ul.bsn-list {
+    width: 100%;
+    outline: 1px solid red;
+}
+
+.bsn-list li {
+    width: 100%;
+    border-bottom: 1px solid #111;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bsn-list li:first-child {
+    border-top: 1px solid #111;
+}
+
+.bsn-list li:hover {
+    background-color: #13b5b1;
+    color: #eee;
+}
+
+.bsn-list li:hover h4 {
+    background-color: #13b5b1;
+}
+
+.bsn-tag > div {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.bsn-tag div:before {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 1px;
+    background-color: #ff9900;
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
+
+.bsn-tag > div h4 {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    line-height: 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+
+.bsn-list li .des {
+    width: 100%;
+    height: 300px;
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-align: center;
+    word-break: keep-all;
+    display: none;
+}
+
+.bsn-list li .des span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 140px 10px 0;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.7);
+}
